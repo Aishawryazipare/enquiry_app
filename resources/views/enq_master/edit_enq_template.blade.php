@@ -9,8 +9,6 @@
 }
 </style>
 <?php 
-//Shilpa New Changes
-
 $enq_cat = json_decode($enq_temp['enq_categories'],true); 
 $enq_field = json_decode($enq_temp['enq_fields'],true); 
 $ii = $jj = 1;$m = 0;
@@ -324,6 +322,7 @@ $(document).ready(function () {
         }); 
     
 
+
     $("#h_lost1").on('click','.remove_field',function(){
            var classname = $(this). closest('tr').attr('class');
            var ret = classname.split(" ");
@@ -355,3 +354,4 @@ $(document).ready(function () {
  });
 </script>
 @endsection
+
